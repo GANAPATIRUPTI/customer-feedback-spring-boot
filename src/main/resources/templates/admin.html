@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin Dashboard</title>
+</head>
+<body>
+
+<h2>Admin Dashboard.</h2>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Feedback</th>
+    </tr>
+
+    <tr th:each="f : ${feedbackList}">
+        <td th:text="${f.id}"></td>
+        <td th:text="${f.feedbackText}"></td>
+    </tr>
+</table>
+
+</body>
+</html>
